@@ -1,0 +1,39 @@
+;(function(window, $){
+	var request_url = '';
+	var target_url = '';
+	var req_data = {};
+	var interval_fd = undefined;
+	var circle_num = 1;
+	var endCallback = function(data, target_url){
+		window.location.href = target_url;
+	};
+	window.qrcodeRsyncInit = function(req_url, tar_url){
+		request_url = req_url + '?callback=?';
+		if(tar_url != ''){
+			target_url = tar_url;
+		}else{
+			target_url = window.location.href;
+		}
+		if(arguments.length >= 3 && typeof arguments[2] == 'function'){
+			endCallback = arguments[2];
+		}
+		interval_fd = setInterval(requestCode, 1000);
+	};
+	window.qrcodeRsyncClose = function(){
+		if(interval_fd != undefined){
+			clearInterval(interval_fd);
+		}
+	};
+	function requestCode(){
+		if(circle_num > 6000 && interval_fd != undefined){
+			clearInterval(interval_fd);
+		}
+		$.getJSON(request_url,function(data){
+			if(typeof data.state != 'undefined' && data.state > 0){
+				clearInterval(interval_fd);
+				endCallback(data, target_url);
+			}
+		});
+		circle_num++;
+	}
+})(window, jQuery);

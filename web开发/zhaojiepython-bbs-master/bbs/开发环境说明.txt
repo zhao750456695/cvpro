@@ -1,0 +1,1 @@
+在virtualenv下python3.6开发，requirement.txt是开发环境

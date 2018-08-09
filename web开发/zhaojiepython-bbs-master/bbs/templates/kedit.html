@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<textarea id="editor_id" name="content" style="height: 400px" >请输入评论</textarea>
+
+<script src="{% static 'js/editor/kindeditor/kindeditor-all-min.js' %}"></script>
+    <script src="{% static 'js/editor/kindeditor/lang/zh-CN.js' %}"></script>
+    <script src="{% static 'js/editor/kindeditor/themes/default/default.css' %}"></script>
+    <script>
+        KindEditor.ready(function (k) {
+            window.editor = k.create('#editor_id',{
+                resizeType:1,
+                allowPreviewEmoticons : false,
+                allowImageRemote : false,
+                {#处理url#}
+                uploadJson : '/upload/kindeditor',
+
+            });
+        })
+
+
+    </script>
+</body>
+</html>

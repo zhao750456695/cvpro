@@ -1,0 +1,13 @@
+document.writeln("<div class=\"kyLogo\"><a href=\"http:\/\/www.kaoyan.com\/\" title=\"考研网\" target=\"_self\">考研网<i><\/i><\/a><\/div>");
+document.writeln("<ul class=\"hdkyList\">");
+document.writeln("<li><a href=\"http:\/\/www.kaoyan.com\/\" title=\"考研网\" target=\"_self\">首页<\/a><\/li>");
+document.writeln("<li><a href=\"http:\/\/www.kaoyan.com\/baokao\/\" title=\"考研报考\" target=\"_self\">报考<\/a><\/li>");
+document.writeln("<li><a href=\"http:\/\/www.kaoyan.com\/beikao\/\" title=\"考研备考\" target=\"_self\">备考<\/a><\/li>");
+document.writeln("<li><a href=\"http:\/\/www.kaoyan.com\/fushi\/\" title=\"考研复试\" target=\"_self\">复试<\/a><\/li>");
+document.writeln("<li><a href=\"http:\/\/tiaoji.kaoyan.com\/\" title=\"考研调剂\" target=\"_self\">调剂<\/a><\/li>");
+document.writeln("<li class=\"kyGap\"><\/li>");
+document.writeln("<li><a href=\"http:\/\/www.bangxuetang.com\/\" title=\"帮学堂\" target=\"_blank\" style=\"color:#fffc00;font-weight:bold;\">帮学堂<\/a><\/li>");
+document.writeln("<li class=\"kyCur\"><a href=\"http:\/\/bbs.kaoyan.com\/\" title=\"考研论坛\" target=\"_self\">论坛<\/a><\/li>");
+document.writeln("<li><a href=\"http:\/\/yz.kaoyan.com\/\" title=\"研招网\" target=\"_self\">研招<\/a><\/li>");
+document.writeln("<li><a href=\"http:\/\/download.bbs.kaoyan.com\/\" title=\"考研资料\" target=\"_self\">资料<\/a><\/li>");
+document.writeln("<\/ul>");

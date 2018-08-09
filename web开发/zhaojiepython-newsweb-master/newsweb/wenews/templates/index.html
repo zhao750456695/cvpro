@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}{% endblock %}
+{% block custom_bread %}
+
+{% endblock %}
+{% block custom_js%}
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+
+{% endblock %}
+{% block content %}
+    <div class="banner">
+			<div class="wp">
+				<div class="fl">
+					<div class="imgslide">
+						<ul class="imgs">
+
+                           {% for banner in all_banners %}
+                                                       <li>
+                                    <a href="{{ banner.url }}">
+                                        <img width="1200" height="478" src="{{ MEDIA_URL }}{{ banner.image }}" />
+                                    </a>
+                                </li>
+
+                           {% endfor %}
+
+
+
+
+
+						</ul>
+					</div>
+					<div class="unslider-arrow prev"></div>
+					<div class="unslider-arrow next"></div>
+				</div>
+
+				</div>
+
+
+			</div>
+<!--banner end-->
+<!--feature start-->
+	<section>
+		<div class="wp">
+			<ul class="feature">
+				<li class="feature1">
+					<img class="pic" src="static/images/feature1.png"/>
+					<p class="center">专业权威</p>
+				</li>
+				<li class="feature2">
+					<img class="pic" src="static/images/feature2.png"/>
+					<p class="center">实时最新</p>
+				</li>
+				<li class="feature3">
+					<img class="pic" src="static/images/feature3.png"/>
+					<p class="center">现场直击</p>
+				</li>
+				<li class="feature4">
+					<img class="pic" src="static/images/feature4.png"/>
+					<p class="center">数据真实</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+<!--feature end-->
+<!--module1 start-->
+	<section>
+		<div class="module">
+			<div class="wp">
+				<h1>时事新闻</h1>
+				<div class="module1 eachmod">
+					<div class="module1_1 left">
+						<img width="228" height="614" src="{% static 'images/module1_1.jpg' %}"/>
+						<p class="fisrt_word">真实快捷<br/>专业权威</p>
+						<a class="more" href="{% url 'news:topiclist' %}">查看更多新闻 ></a>
+					</div>
+					<div class="right group_list">
+						<div class="module1_2 box">
+							<div class="imgslide2">
+								<ul class="imgs">
+                                {% for topic in banner_topics %}
+                                    <li>
+                                        <a href="{% url 'news:detail' topic.id %}">
+                                            <img width="470" height="300" src="{{ MEDIA_URL }}{{ topic.image }}" />
+                                        </a>
+                                    </li>
+                                {% endfor %}
+
+								</ul>
+							</div>
+							<div class="unslider-arrow2 prev"></div>
+							<div class="unslider-arrow2 next"></div>
+						</div>
+                            {% for topic in topics %}
+                            <div class="module1_{{ forloop.counter|add:2 }} box">
+                                <a href="{% url 'news:detail' topic.id %}">
+                                    <img width="233" height="190" src="{{ MEDIA_URL }}{{ topic.image }}"/>
+                                </a>
+                                <div class="des">
+                                    <a href="{% url 'news:detail' topic.id %}html">
+                                        <h2 title="{{ topic.topic_name }}">{{ topic.topic_name }}</h2>
+                                    </a>
+                                    <span class="fl">难度：<i class="key">{{ topic.get_category_display }}</i></span>
+                                    <span class="fr">阅读人数：{{ topic.user_nums }}</span>
+                                </div>
+                                <div class="bottom">
+                                    <span class="fl" title="新华社">新华社</span>
+                                    <span class="star fr">{{ topic.fav_nums }}</span>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

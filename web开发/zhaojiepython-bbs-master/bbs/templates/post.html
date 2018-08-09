@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>editor.html</title>
+</head>
+<body>
+<form autocomplete="off" method="post">
+    {% csrf_token %}
+    <div style="margin: 0 auto;width: 700px">
+
+        <lable>标题：</lable>
+        <input type="text" name="title">
+    </div>
+    <p></p>
+    <div style="margin: 0 auto;width: 700px">
+   <textarea id="editor_id" name="content" style="width:700px;height:300px;">
+</textarea>
+        <input type="submit" value="提交">
+    </div>
+  <script src="{% static 'js/editor/kindeditor/kindeditor-all-min.js' %}"></script>
+    <script src="{% static 'js/editor/kindeditor/lang/zh-CN.js' %}"></script>
+    <script src="{% static 'js/editor/kindeditor/themes/default/default.css' %}"></script>
+    <script>
+        var csrfitems = document.getElementsByName("csrfmiddlewaretoken");
+        var csrftoken = "";
+        if(csrfitems.length > 0)
+        {
+            csrftoken = csrfitems[0].value;
+        }
+
+        KindEditor.ready(function (K) {
+            window.editor = K.create('#editor_id',{
+                uploadJson : '/uploadfiles/',
+                extraFileUploadParams : {
+                csrfmiddlewaretoken:csrftoken
+            }
+            });
+        });
+    </script>
+    {% csrf_token %}
+</form>
+</body>
+</html>
