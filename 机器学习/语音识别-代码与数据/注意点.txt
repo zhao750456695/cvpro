@@ -1,0 +1,6 @@
+opencv_createsamples.exe -vec pos.vec -info pos/pos.txt -bg neg.txt -w 100 -h 100 -num 871
+opencv_traincascade.exe -data dt -vec pos.vec -bg neg.txt -numPos 800 -maxfalsealarm 0.5 -numStages 5 -featureType LBP -w 100 -h 100
+1、负样本数量尽量大些
+2、负样本描述文件只需要文件名，不需要其他信息，注意需要相对地址
+3、负样本描述文件用相对目录
+4、-numPos值不宜过大，80%-100%数量即可
