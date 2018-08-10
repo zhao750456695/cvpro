@@ -1,0 +1,4 @@
+课程名：WEB前端整套教程html+divcss+javascript+jquery+html5
+学生数：6950
+课程价格：¥12.00
+课时数：14/31

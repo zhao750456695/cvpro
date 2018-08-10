@@ -1,0 +1,4 @@
+课程名：Data Mining With （SQL Server + Excel）系列视频教程
+学生数：857
+课程价格：¥64.50
+课时数：22/22

@@ -1,0 +1,4 @@
+课程名：全网首套_Spring&amp;SpringMVC;&amp;JPA;&amp;SpringData; 整合案例视频
+学生数：15534
+课程价格：¥22.00
+课时数：12/12

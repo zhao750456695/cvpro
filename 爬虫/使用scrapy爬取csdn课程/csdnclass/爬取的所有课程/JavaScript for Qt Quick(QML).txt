@@ -1,0 +1,4 @@
+课程名：JavaScript for Qt Quick(QML)
+学生数：40923
+课程价格：会员免费
+课时数：8/8

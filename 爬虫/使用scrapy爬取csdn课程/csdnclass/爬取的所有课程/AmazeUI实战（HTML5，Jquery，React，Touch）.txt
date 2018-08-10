@@ -1,0 +1,4 @@
+课程名：AmazeUI实战（HTML5，Jquery，React，Touch）
+学生数：9546
+课程价格：¥25.00
+课时数：22/22

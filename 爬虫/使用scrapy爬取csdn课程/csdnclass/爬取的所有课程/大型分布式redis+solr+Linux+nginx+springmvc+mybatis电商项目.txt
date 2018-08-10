@@ -1,0 +1,4 @@
+课程名：大型分布式redis+solr+Linux+nginx+springmvc+mybatis电商项目
+学生数：39719
+课程价格：¥1548.00
+课时数：83/83

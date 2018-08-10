@@ -1,0 +1,4 @@
+课程名：Mybatis入门到精通（备java基础，oracle，mysql，javaee必备）
+学生数：9635
+课程价格：¥99.00
+课时数：22/22

@@ -1,0 +1,4 @@
+课程名：Maven+Struts2+Spring4+Hibernate4+Bootstrap客户关系系统视频
+学生数：22906
+课程价格：¥500.00
+课时数：36/36

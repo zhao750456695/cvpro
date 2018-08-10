@@ -1,0 +1,4 @@
+课程名：springMvc jdbc jQWidgets项目案例jasperreport自动化报表系统
+学生数：6091
+课程价格：¥79.50
+课时数：21/21

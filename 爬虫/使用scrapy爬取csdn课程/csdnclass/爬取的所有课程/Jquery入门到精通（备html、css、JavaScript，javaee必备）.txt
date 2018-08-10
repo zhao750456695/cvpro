@@ -1,0 +1,4 @@
+课程名：Jquery入门到精通（备html、css、JavaScript，javaee必备）
+学生数：10049
+课程价格：¥99.00
+课时数：24/24

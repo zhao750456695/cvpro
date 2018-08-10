@@ -1,0 +1,4 @@
+课程名：前后端分离架构angular4+spring cloud+mybatis+redis+mysql实战
+学生数：108
+课程价格：¥299.00
+课时数：11/21

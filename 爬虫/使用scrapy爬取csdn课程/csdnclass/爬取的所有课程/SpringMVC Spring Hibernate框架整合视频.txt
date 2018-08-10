@@ -1,0 +1,4 @@
+课程名：SpringMVC Spring Hibernate框架整合视频
+学生数：17760
+课程价格：¥50.00
+课时数：4/4

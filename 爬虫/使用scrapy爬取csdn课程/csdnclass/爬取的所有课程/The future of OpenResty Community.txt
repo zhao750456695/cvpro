@@ -1,0 +1,4 @@
+课程名：The future of OpenResty Community
+学生数：2230
+课程价格：会员免费
+课时数：1/1

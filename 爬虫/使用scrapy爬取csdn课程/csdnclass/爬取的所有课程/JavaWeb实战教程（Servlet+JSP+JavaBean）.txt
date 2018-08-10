@@ -1,0 +1,4 @@
+课程名：JavaWeb实战教程（Servlet+JSP+JavaBean）
+学生数：1090
+课程价格：¥68.00
+课时数：34/34

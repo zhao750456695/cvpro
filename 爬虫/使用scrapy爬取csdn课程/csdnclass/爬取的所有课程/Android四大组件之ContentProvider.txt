@@ -1,0 +1,4 @@
+课程名：Android四大组件之ContentProvider
+学生数：4464
+课程价格：会员免费
+课时数：6/6

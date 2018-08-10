@@ -1,0 +1,4 @@
+课程名：【系列课】Springmvc4+Mybatis3+Spring4+Bootstrap3之配置
+学生数：2111
+课程价格：¥29.00
+课时数：11/11

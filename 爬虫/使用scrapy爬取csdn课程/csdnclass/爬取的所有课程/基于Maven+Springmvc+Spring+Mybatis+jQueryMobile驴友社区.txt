@@ -1,0 +1,4 @@
+课程名：基于Maven+Springmvc+Spring+Mybatis+jQueryMobile驴友社区
+学生数：28972
+课程价格：¥300.00
+课时数：26/26

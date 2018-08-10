@@ -1,0 +1,4 @@
+课程名：如何使用Spring XD构建Data Microservices
+学生数：2933
+课程价格：会员免费
+课时数：2/2

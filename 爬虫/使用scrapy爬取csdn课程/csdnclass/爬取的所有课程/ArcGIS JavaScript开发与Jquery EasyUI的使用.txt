@@ -1,0 +1,4 @@
+课程名：ArcGIS JavaScript开发与Jquery EasyUI的使用
+学生数：2516
+课程价格：¥20.00
+课时数：30/30

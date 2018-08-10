@@ -1,0 +1,4 @@
+课程名：会话session和cookie原理（备java基础，jsp，servlet，tomcat）
+学生数：3548
+课程价格：¥79.90
+课时数：9/9

@@ -1,0 +1,4 @@
+课程名：Laravel的Linux容器Vagrant+Homestead+Composer+Yaml环境搭建
+学生数：4933
+课程价格：¥12.00
+课时数：7/7

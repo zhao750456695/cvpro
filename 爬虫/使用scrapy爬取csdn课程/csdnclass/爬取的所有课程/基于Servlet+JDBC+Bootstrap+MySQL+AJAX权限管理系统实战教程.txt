@@ -1,0 +1,4 @@
+课程名：基于Servlet+JDBC+Bootstrap+MySQL+AJAX权限管理系统实战教程
+学生数：40406
+课程价格：¥500.00
+课时数：43/43

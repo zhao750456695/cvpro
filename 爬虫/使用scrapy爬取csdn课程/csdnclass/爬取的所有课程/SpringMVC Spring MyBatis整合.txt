@@ -1,0 +1,4 @@
+课程名：SpringMVC Spring MyBatis整合
+学生数：30947
+课程价格：¥49.00
+课时数：5/5

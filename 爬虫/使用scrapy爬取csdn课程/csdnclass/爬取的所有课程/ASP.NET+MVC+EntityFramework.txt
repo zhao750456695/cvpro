@@ -1,0 +1,4 @@
+课程名：ASP.NET+MVC+EntityFramework
+学生数：2396
+课程价格：¥3.00
+课时数：5/5
